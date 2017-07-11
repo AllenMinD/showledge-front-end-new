@@ -13,11 +13,12 @@
     3)登陆模态框中的警告框css（.alert)
     4)背景色#00cc66的按钮（.btn-green）
     5).box类样式
-    6)头像样式(.avartar-sm、.avartar-ssm、.avatar-md)
+    6)头像样式(.avartar-sm、.avartar-ssm、.avatar-md、.avatar-bg)
     7)小icon间距样式
     8)中间栏取消左右padding（#middle-main）
     9)网页页脚(.page-footer)
     10)加载更多按钮(.want-more-btn)
+    11)font-awesome的icon的样式(.fa)
 
 3 - @3 group 局部样式：标题、页脚、导航、布局、其他页面结构元素
     1)顶部导航栏样式（.navbar）
@@ -26,6 +27,7 @@
     1）------------首页（登陆前） index.html ------------
     2）------------首页（登陆后） index-login.html ------------
     3）------------"更多推荐"页 intro-user-page.html ------------
+    4）------------个人主页 personal-page.html ------------
 
 
 5 - @5 group 处理覆盖和例外情况
@@ -126,6 +128,13 @@ ul {
   border: 1px solid #ddd;  
 }
 
+/*.avatar-bg*/
+.avatar-bg {
+  border-radius: 100px;
+  width: 200px;
+  border: 1px solid #ddd;    
+}
+
 img[alt="icon"] {
   margin-right: 5px;
 }
@@ -146,6 +155,11 @@ img[alt="icon"] {
 /*加载更多按钮 .want-more-btn*/
 .want-more-btn {
   margin: 50px auto 50px auto;
+}
+
+/*font-awesome的icon的样式*/
+.fa {
+  margin-right: 5px;
 }
 
 /*@3 group 局部样式：标题、页脚、导航、布局、其他页面结构元素-----------------*/ 
@@ -546,7 +560,7 @@ a.user-dashboard-bg:active {
 }
 
 /*登录后的#right-reco右边推荐栏css*/
-/*.main-content-login*/
+/*#index-login-page*/
 #right-reco .reco-xb > span {
   font-size: 16px;
   font-weight: bold;
@@ -566,20 +580,20 @@ a.user-dashboard-bg:active {
   border-bottom: 1px solid #ddd;
 }
 
-.main-content-login #right-reco .xb-list > li > a.reco-user-name {
+#index-login-page #right-reco .xb-list > li > a.reco-user-name {
   position: absolute;
   left: 50px;
   font-size: 15px;
 }
 
-.main-content-login #right-reco .xb-list > li > p {
+#index-login-page #right-reco .xb-list > li > p {
   position: absolute;
   font-size: 12px;
   left: 50px;
   top: 30px; 
 }
 
-.main-content-login #right-reco .xb-list > li > a.follow-btn {
+#index-login-page #right-reco .xb-list > li > a.follow-btn {
   float: right;
   color: #42c02e;
   border-radius: 18px;
@@ -692,5 +706,141 @@ a.user-dashboard-bg:active {
 #intro-user-page .want-more-btn:hover {
   background-color: #9b9b9b;
 }
+
+
+/*------------个人主页 personal-page.html ------------*/
+/*#personal-page*/
+#personal-page .main-content {
+  margin-top: 15px;
+}
+
+/*.profile-top-cover 页面顶部颜色处*/
+#profile-top-cover {
+  position: relative;
+  height: 175px;
+  background-color: #00cc66;
+  margin: 51px 0 0 0;
+}
+
+/*用户头像*/
+#profile-top-cover .avatar-bg {
+  position: absolute;
+  left: 129px;
+  top: 65px;
+  border: 5px solid white;
+  border-radius: 100px;
+}
+
+/*.profile-top-navbar 切换按钮*/
+#profile-top-navbar {
+  margin: 0;
+  background-color: white;
+  height: 60px;
+  padding-left: 394px;
+  -webkit-box-shadow: inset 0 0px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 204, 102, .6);
+  box-shadow: inset 0 0px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 204, 102, .6);  
+}
+
+#profile-top-navbar > ul {
+  position: relative;
+  border: none;
+}
+
+#profile-top-navbar > ul > li > a {
+  height: 60px;
+  color: #555;
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+}
+
+#profile-top-navbar > ul > li > a:hover,
+#profile-top-navbar > ul > li.active > a,
+#profile-top-navbar > ul > li.active > a:hover,
+#profile-top-navbar > ul > li.active > a:focus {
+  color: #00cc66;
+  cursor: default;
+  background-color: #fff;
+  border-bottom: 2px solid #00cc66;
+}
+
+#profile-top-navbar > ul > li > a > span {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#edit-profile-btn {
+  position: absolute;
+  right: 125px;
+  top: 12px;
+}
+
+#edit-profile-btn > button {
+  border-radius: 20px;
+}
+
+/*personal-page.html左边个人信息栏 .user-profile*/
+.user-profile {
+  margin-top: 20px;
+}
+
+.user-profile .user-name {
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+
+.user-profile .user-summary {
+  color: black;
+  line-height: 25px;
+  font-size: 14px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+}
+
+/*用户地址和加入日期的样式*/
+.user-profile #user-address,
+.user-profile #user-join-date {
+  font-size: 15px;
+  color: #7f7f7f;
+  margin-top: 5px;
+}
+
+/*个人知识简历按钮*/
+.user-profile #user-resume-btn {
+  display: block;
+}
+
+.user-profile #user-resume-btn > button {
+  width: 251px;
+  margin-top: 25px;
+}
+
+/*personal-page.html右边推荐栏*/
+#personal-page #right-reco .xb-list > li > a.reco-user-name {
+  position: absolute;
+  left: 50px;
+  font-size: 15px;
+}
+
+#personal-page #right-reco .xb-list > li > p {
+  position: absolute;
+  font-size: 12px;
+  left: 50px;
+  top: 30px; 
+}
+
+#personal-page #right-reco .xb-list > li > a.follow-btn {
+  float: right;
+  color: #42c02e;
+  border-radius: 18px;
+  border: 1px solid #42c02e;
+  padding: 3px 4px 3px 4px;
+  font-size: 10px; 
+}
+
 
 /*@5 group 处理覆盖和例外情况-----------------*/
