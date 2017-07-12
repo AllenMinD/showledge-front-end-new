@@ -5,7 +5,7 @@
     1)body字体、背景颜色
     2)a元素的基本样式
     3)ul元素的基本样式
-    4)
+    4)nav元素（顶部导航栏）的样式
 
 2 - @2 group 特殊样式和辅助样式：表单、通知和错误、一致的条目
     1)网页主要内容与顶部导航条的距离
@@ -64,6 +64,11 @@ a {
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+nav {
+  padding-left: 113px;
+  padding-right: 113px;
 }
 
 /*@2 group 特殊样式和辅助样式：表单、通知和错误、一致的条目-----------------*/ 
@@ -665,6 +670,7 @@ a.user-dashboard-bg:active {
   text-align: center;
   border-bottom: 1px solid #eee;
   padding-bottom: 10px;
+  color: #7f7f7f;
 }
 
 .intro-user-list > li > .intro-user-info > p {
@@ -685,21 +691,14 @@ a.user-dashboard-bg:active {
   display: block;
   text-align: center;
   padding-bottom: 5px;
-}
-
-.recent-act > a:link {
-  color: #1f1f1f;
-}
-
-.recent-act > a:hover {
   color: #00cc66;
 }
 
 .recent-act > span {
+  display: block;
   text-align: center;
   font-size: 13px;
-  color: #bbb;
-  margin-left: 30px;
+  color: #7f7f7f;
   margin-bottom: 10px;
 }
 
@@ -930,13 +929,13 @@ a.user-dashboard-bg:active {
   border: 1px solid #00cc66;
 }
 /*笔记内容*/
-.note-content {
+.note-entity {
   margin: 30px 0px 0px 0px;
   font-size: 16px;
   line-height: 30px;
 }
 
-.note-content > p {
+.note-entity > p {
   padding-bottom: 10px;
 }
 /*笔记的点赞收藏按钮*/

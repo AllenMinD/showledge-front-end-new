@@ -27,11 +27,32 @@ https://qdan.me/list/WVy8eh0aDwUT7KsT
 
 个人主页 7.11
 
-文章查看页 7.12
+查阅笔记页 7.12
 
 编辑文章页/插件
 编辑地图页/插件
 ajax
+
+###################################################################################################
+细节：
+1.热门地图（榜样地图）、热门简历（榜样简历）、知识地图、学习榜样、关注者、收藏库 的box（index.html/index-login.html/personal-page.html）
+2.关注按钮的翻转效果（index.html/index-login.html/note-page.html）
+3.评论框 (index.html/index-login.html)
+4.点赞效果（index.html/index-login.html/note-page.html）
+5.编辑学习动态的“心情”、“学习资料”、“学习笔记” 的表单(index-login.html)
+6.分享（index.html/index-login.html/note-page.html）
+7.评论、回复（index.html/index-login.html/note-page.html）
+8.编辑文章页/插件
+9.编辑地图页/插件
+10.ajax
+
+还差页面：
+1.编辑笔记页
+2.编辑知识地图页
+3.查阅知识地图页
+4.搜索页
+5.消息页
+6.个人资料编辑页（设置页）
 
 
 ============================================================================
