@@ -19,6 +19,7 @@
     9)网页页脚(.page-footer)
     10)加载更多按钮(.want-more-btn)
     11)font-awesome的icon的样式(.fa)
+    12)用户名样式(.user-name)
 
 3 - @3 group 局部样式：标题、页脚、导航、布局、其他页面结构元素
     1)顶部导航栏样式（.navbar）
@@ -28,6 +29,7 @@
     2）------------首页（登陆后） index-login.html ------------
     3）------------"更多推荐"页 intro-user-page.html ------------
     4）------------个人主页 personal-page.html ------------
+    5）------------笔记阅读页 note-page.html ------------
 
 
 5 - @5 group 处理覆盖和例外情况
@@ -42,7 +44,7 @@ body {
 }
 
 a:link {
-  color: #969696;
+  color: #5e5e5e;
 }
 a:visited {
   color: #00cc66;
@@ -162,6 +164,11 @@ img[alt="icon"] {
   margin-right: 5px;
 }
 
+/*用户名样式 .user-name*/
+.user-name {
+  font-weight: bold;
+}
+
 /*@3 group 局部样式：标题、页脚、导航、布局、其他页面结构元素-----------------*/ 
 /*顶部导航栏样式*/
 /* 顶部导航栏的“登录注册按钮”css */
@@ -175,7 +182,9 @@ img[alt="icon"] {
   font-size: 20px;
 }
 .navbar {
-  border-bottom: 4px solid #00cc66;
+  border-bottom: 3px solid #00cc66;
+  -webkit-box-shadow: inset 0 0px 5px rgba(0,0,0,.075), 0 0 8px rgba(0, 204, 102, .6);
+  box-shadow: inset 0 0px 5px rgba(0,0,0,.075), 0 0 8px rgba(0, 204, 102, .6);  
 }
 
 /*@4 group 特定页面的相关组件：各个页面-----------------*/ 
@@ -314,27 +323,27 @@ img[alt="icon"] {
 }
 
 
-/*#right-reco右边推荐栏css*/
-#right-reco .reco-xb > span {
-  font-size: 16px;
+/*登陆前 #right-reco右边推荐栏css*/
+#index-page #right-reco .reco-xb > span {
+  font-size: 18px;
   font-weight: bold;
   padding: 20px;
 }
 
-#right-reco .xb-list {
-  margin-top: 15px;
+#index-page #right-reco .xb-list {
+  margin-top: 5px;
   padding-left: 20px;
   padding-right: 30px;
 }
 
-#right-reco .xb-list > li {
+#index-page #right-reco .xb-list > li {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ddd;
 }
 
-#right-reco .xb-list > li > a.follow-btn {
+#index-page #right-reco .xb-list > li > a.follow-btn {
   float: right;
   color: #42c02e;
   border-radius: 18px;
@@ -342,17 +351,17 @@ img[alt="icon"] {
   padding: 8px;
 }
 
-#right-reco .xb-list > li > a.follow-btn:hover {
+#index-page #right-reco .xb-list > li > a.follow-btn:hover {
   text-decoration: none;
 }
 
-#right-reco .xb-list > li > a.reco-user-name {
+#index-page #right-reco .xb-list > li > a.reco-user-name {
   position: absolute;
   left: 58px;
   font-size: 16px;
 }
 
-#right-reco .xb-list > li > p {
+#index-page #right-reco .xb-list > li > p {
   position: absolute;
   left: 58px;
   top: 35px; 
@@ -561,19 +570,19 @@ a.user-dashboard-bg:active {
 
 /*登录后的#right-reco右边推荐栏css*/
 /*#index-login-page*/
-#right-reco .reco-xb > span {
+#index-login-page #right-reco .reco-xb > span {
   font-size: 16px;
   font-weight: bold;
   padding: 12px;
 }
 
-#right-reco .xb-list {
-  margin-top: 15px;
+#index-login-page #right-reco .xb-list {
+  margin-top: 0px;
   padding-left: 12px;
   padding-right: 16px;
 }
 
-#right-reco .xb-list > li {
+#index-login-page #right-reco .xb-list > li {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -820,6 +829,25 @@ a.user-dashboard-bg:active {
 }
 
 /*personal-page.html右边推荐栏*/
+#personal-page #right-reco .reco-xb > span {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px;
+}
+
+#personal-page #right-reco .xb-list {
+  margin-top: 0px;
+  padding-left: 12px;
+  padding-right: 16px;
+}
+
+#personal-page #right-reco .xb-list > li {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
 #personal-page #right-reco .xb-list > li > a.reco-user-name {
   position: absolute;
   left: 50px;
@@ -842,5 +870,175 @@ a.user-dashboard-bg:active {
   font-size: 10px; 
 }
 
+
+/*------------笔记阅读页 note-page.html ------------*/
+/*#note-page*/
+#note-page {
+  background-color: white;
+}
+
+#note-page .box {
+  border: none;
+}
+/*笔记信息*/
+.note-info {
+  position: relative;
+  margin-top: 30px;
+}
+
+.note-info .user-name {
+  position: absolute;
+  left: 60px;
+  font-size: 18px;
+}
+
+.note-info .follow-btn {
+  display: inline-block;
+  position: absolute;
+  left: 160px;
+  padding: 3px 8px 3px 8px;
+  border-radius: 20px;
+}
+
+.note-info .note-count {
+  position: absolute;
+  color: #ababab;
+  left: 60px;
+  top: 30px;
+  font-size: 13px;
+}
+/*笔记标签（分类）*/
+.note-category {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #aaa;
+  font-size: 16px;
+}
+
+.note-category .note-tag {
+  margin-left: 10px;
+  font-size: 14px;
+  padding: 2px;
+  border: 1px solid #5e5e5e;
+  border-radius: 3px;
+}
+
+.note-category .note-tag:hover {
+  text-decoration: none;
+  border: 1px solid #00cc66;
+}
+/*笔记内容*/
+.note-content {
+  margin: 30px 0px 0px 0px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.note-content > p {
+  padding-bottom: 10px;
+}
+/*笔记的点赞收藏按钮*/
+.function-btn {
+  text-align: center;
+}
+/*输入评论区域*/
+.input-comment {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.input-comment > a {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.input-comment #input-comment-area {
+  margin-left: 65px;
+  display: inline-block;
+  width: 525px;
+}
+
+.input-comment .send-comment-btn {
+  position: absolute;
+  right: 0px;
+  top: 110px;
+}
+
+/*笔记的评论区域*/
+.comments-list {
+  margin-top: 50px;
+}
+
+.comments-list .comments-list-count {
+  font-weight: bold;
+  font-size: 20px;  
+}
+
+.comments-list > ul {
+}
+
+.comments-list > ul > li {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.comments-list > ul > li > .comment-user {
+  position: relative;
+}
+
+.comments-list > ul > li > .comment-user > .user-name {
+  position: absolute;
+  left: 45px;
+  font-size: 16px;
+}
+
+.comments-list > ul > li > .comment-user > div {
+  position: absolute;
+  top: 22px;
+  left: 45px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.comments-list > ul > li > .comment-content {
+  margin-top: 10px;
+  margin-left: 0;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.comments-list > ul > li > .comment-function-btn {
+
+}
+
+.comments-list > ul > li > .comment-function-btn > a {
+  display: inline-block;
+  margin-right: 15px;
+  color: #aaa;
+}
+
+.comments-list > ul > li > .comment-function-btn > a:hover {
+  color: #00cc66;
+}
+
+.comments-list > ul > li > .reply-comment {
+  margin-top: 15px;
+  padding-left: 15px;
+  border-left: 2px solid #ababab;
+}
+
+.reply-comment > span,
+.reply-comment > .reply-btn {
+  color: #aaa; 
+  margin-right: 10px;
+}
+
+.reply-comment > .reply-btn:hover {
+  color: #00cc66;
+}
 
 /*@5 group 处理覆盖和例外情况-----------------*/
