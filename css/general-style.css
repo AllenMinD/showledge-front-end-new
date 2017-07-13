@@ -43,19 +43,22 @@ body {
   background-color: #e6ecf0;
 }
 
-a:link {
+a:link,
+a:visited {
   color: #5e5e5e;
 }
-a:visited {
-  color: #00cc66;
-}
+
 a:hover {
   color: #00cc66;
   text-decoration: underline;
 }
-a:active  {
+
+a:focus,
+a:active {
+  color: #00cc66;
   outline: 0;
 }
+
 a {
   cursor: pointer;
   background-color: transparent;
@@ -249,7 +252,7 @@ img[alt="icon"] {
   margin-right: auto;
 }
 
-/* 学习动态框css #hot-intro #by-intro .box*/
+/* 学习动态box #hot-intro #by-intro .box*/
 /*用户头像和姓名*/
 .user-info .user-avatar .user-name {
   font-size: 16px;
@@ -285,6 +288,7 @@ img[alt="icon"] {
 .user-library .xxzl  a,
 .user-library .xxbj  a {
   margin-right: 5px;
+  color: #00cc66;
 }
 
 .user-library .xxzl > span,
@@ -311,22 +315,57 @@ img[alt="icon"] {
   color: #00cc66;
   cursor: pointer;
 }
+/*学习笔记box*/
+.box > .note-title-sm {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 54px; 
+  color: #00cc66;
+}
 
 .note-content {
   margin-left: 54px;
   margin-top: 10px;
 }
 
-.note-title-sm {
+.box > .more-detail-btn {
+  margin-left: 54px;
+  color: #00cc66;
+}
+/*知识地图box*/
+.box > .map-title-sm {
   font-size: 18px;
   font-weight: bold;
   margin-left: 54px; 
+  color: #00cc66;  
 }
 
-.note-title-sm:link {
+.map-keyword {
+  margin-left: 54px;
+  margin-top: 15px;
+  font-size: 16px;
   color: #00cc66;
 }
 
+.map-keyword > span {
+  color: #7f7f7f;
+  font-size: 14px;
+}
+
+.map-keyword .keyword {
+  border: 1px solid #00cc66;
+  background-color: #00cc66;
+  color: white;
+  padding: 1px 5px 1px 5px;
+  border-radius: 10px;
+}
+
+.map-keyword .keyword:hover {
+  border: 1px solid #00cc66;
+  background-color: #f3fff9;
+  color: #00cc66;
+  text-decoration: none;
+}
 
 /*登陆前 #right-reco右边推荐栏css*/
 #index-page #right-reco .reco-xb > span {
@@ -364,6 +403,7 @@ img[alt="icon"] {
   position: absolute;
   left: 58px;
   font-size: 16px;
+  color: #00cc66;
 }
 
 #index-page #right-reco .xb-list > li > p {
@@ -598,6 +638,7 @@ a.user-dashboard-bg:active {
   position: absolute;
   left: 50px;
   font-size: 15px;
+  color: #00cc66;
 }
 
 #index-login-page #right-reco .xb-list > li > p {
@@ -827,6 +868,60 @@ a.user-dashboard-bg:active {
   margin-top: 25px;
 }
 
+/*personal-page.html中间内容栏 标签内容 #study-idol*/
+#study-idol > ul > li {
+  position: relative;
+}
+
+#study-idol > ul > li > .user-name {
+  position: absolute;
+  left: 75px;
+  font-size: 18px;
+}
+
+#study-idol > ul > li > .user-summary {
+  position: absolute;
+  left: 75px;
+  top: 42px;
+  font-size: 16px;
+  color: #7f7f7f;
+}
+
+#study-idol > ul > li > .follow-btn {
+  float: right;
+  margin-top: 8px;
+}
+
+/*personal-page.html中间内容栏 标签内容 #study-watcher*/
+#study-watcher > ul > li {
+  position: relative;
+}
+
+#study-watcher > ul > li > .user-name {
+  position: absolute;
+  left: 75px;
+  font-size: 18px;
+}
+
+#study-watcher > ul > li > .user-summary {
+  position: absolute;
+  left: 75px;
+  top: 42px;
+  font-size: 16px;
+  color: #7f7f7f;
+}
+
+#study-watcher > ul > li > .follow-btn {
+  float: right;
+  margin-top: 8px;
+}
+
+/*personal-page.html中间内容栏 标签内容 #collection*/
+.collect-btn {
+  float: right;
+  margin-top: 10px;
+}
+
 /*personal-page.html右边推荐栏*/
 #personal-page #right-reco .reco-xb > span {
   font-size: 16px;
@@ -851,6 +946,7 @@ a.user-dashboard-bg:active {
   position: absolute;
   left: 50px;
   font-size: 15px;
+  color: #00cc66;
 }
 
 #personal-page #right-reco .xb-list > li > p {
