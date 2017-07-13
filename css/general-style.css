@@ -30,6 +30,7 @@
     3）------------"更多推荐"页 intro-user-page.html ------------
     4）------------个人主页 personal-page.html ------------
     5）------------笔记阅读页 note-page.html ------------
+    6）------------编辑笔记页 edit-note-page.html ------------
 
 
 5 - @5 group 处理覆盖和例外情况
@@ -917,7 +918,7 @@ a.user-dashboard-bg:active {
 }
 
 /*personal-page.html中间内容栏 标签内容 #collection*/
-.collect-btn {
+.cancel-collection-btn {
   float: right;
   margin-top: 10px;
 }
@@ -1134,6 +1135,27 @@ a.user-dashboard-bg:active {
 
 .reply-comment > .reply-btn:hover {
   color: #00cc66;
+}
+
+
+/*------------编辑笔记页 edit-note-page.html ------------*/
+/*#edit-note-page*/
+#edit-note-page {
+  background-color: white;
+}
+
+.editor-note-title > input {
+  height: 60px;
+  border: 0px;
+  font-size: 30px;
+}
+
+#edit-note-page .toolbar {
+    border-top: 1px solid #ccc;
+}
+#edit-note-page .text {
+    border: 1px solid #ccc;
+    height: 400px;
 }
 
 /*@5 group 处理覆盖和例外情况-----------------*/

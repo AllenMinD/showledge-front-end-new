@@ -379,7 +379,7 @@
               <div role="tabpanel" class="tab-pane" id="collection">
                 <ul>
                   <li class="box" id="collection-001">
-                    <button class="btn btn-danger collect-btn">取消收藏</button>
+                    <button class="btn btn-danger cancel-collection-btn">取消收藏</button>
                     <div class="user-info">
                       <div class="user-avatar">
                         <a href="user.html"><img src="image/user-avatar3.jpg" alt="用户头像-sm" class="avatar-sm"></a>
@@ -413,7 +413,7 @@
                     </div>
                   </li>
                   <li class="box" id="collection-002">
-                    <button class="btn btn-danger collect-btn">取消收藏</button>
+                    <button class="btn btn-danger cancel-collection-btn">取消收藏</button>
                     <div class="user-info">
                       <div class="user-avatar">
                         <a href="user.html"><img src="image/user-avatar2.jpg" alt="用户头像-sm" class="avatar-sm"></a>
@@ -481,6 +481,70 @@
         <div class="col-md-1 blank"></div>
       </div>
     </div>
+
+    <!-- 评论窗口模态框 -->
+    <div class="modal fade" id="comment-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="exampleModalLabel">评论<span>(10)</span></h4>
+          </div>
+          <div class="modal-body">
+            <a href="user.html"><img src="image/user-avatar1.jpg" alt="用户头像-sm" class="avatar-sm"></a>
+            <textarea name="comment-box" id="comment-box" class="form-control" rows="4"></textarea>
+            <button class="btn btn-green comment-enter">评论</button>
+          </div>
+          <div class="modal-footer" style="text-align:left;">
+            <ul class="comment-list">
+              <li id="comment-001">
+                <div class="user-info">
+                  <a href="user.html"><img src="image/user-avatar1.jpg" alt="用户头像-sm" class="avatar-ssm"></a>
+                  <a href="user.html" class="user-name">飞翔的便便</a>
+                  <span> - </span>
+                  <span class="user-act-time">2017.7.3 20:30:30</span>
+                </div>
+                <p class="comment-content">
+                  加油！
+                </p>
+                <div class="comment-info">
+                  <span class="glyphicon glyphicon-thumbs-up">123</span>
+                </div>
+              </li>
+              <li id="comment-002">
+                <div class="user-info">
+                  <a href="user.html"><img src="image/user-avatar2.jpg" alt="用户头像-sm" class="avatar-ssm"></a>
+                  <a href="user.html" class="user-name">飞翔的便便</a>
+                  <span> - </span>
+                  <span class="user-act-time">2017.7.3 20:30:30</span>
+                </div>
+                <p class="comment-content">
+                  加油！
+                </p>
+                <div class="comment-info">
+                  <span class="glyphicon glyphicon-thumbs-up">123</span>
+                </div>                
+              </li>
+              <li id="comment-003">
+                <div class="user-info">
+                  <a href="user.html"><img src="image/user-avatar1.jpg" alt="用户头像-sm" class="avatar-ssm"></a>
+                  <a href="user.html" class="user-name">飞翔的便便</a>
+                  <span> - </span>
+                  <span class="user-act-time">2017.7.3 20:30:30</span>
+                </div>
+                <p class="comment-content">
+                  加油！
+                </p>
+                <div class="comment-info">
+                  <span class="glyphicon glyphicon-thumbs-up">123</span>
+                </div>                
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.1.1.min.js"></script>
