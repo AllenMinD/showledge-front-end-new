@@ -831,6 +831,15 @@ a.user-dashboard-bg:active {
   border-radius: 20px;
 }
 
+#edit-profile-btn > button > a {
+  color: white;
+}
+
+#edit-profile-btn > button > a:hover {
+  color: #00cc66;
+  text-decoration: none;
+}
+
 /*personal-page.html左边个人信息栏 .user-profile*/
 .user-profile {
   margin-top: 20px;
