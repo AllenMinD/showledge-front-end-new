@@ -1144,6 +1144,10 @@ a.user-dashboard-bg:active {
   background-color: white;
 }
 
+.editor-note-title {
+  background-color: white;
+}
+
 .editor-note-title > input {
   height: 60px;
   border: 0px;
@@ -1154,8 +1158,13 @@ a.user-dashboard-bg:active {
     border-top: 1px solid #ccc;
 }
 #edit-note-page .text {
-    border: 1px solid #ccc;
-    height: 400px;
+  height: 450px;
 }
+
+#edit-note-page .send-back-btn > button {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
 
 /*@5 group 处理覆盖和例外情况-----------------*/
