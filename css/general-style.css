@@ -20,6 +20,7 @@
     10)加载更多按钮(.want-more-btn)
     11)font-awesome的icon的样式(.fa)
     12)用户名样式(.user-name)
+    13)自定义表单样式：下绿线表单（.form-control-green-border）
 
 3 - @3 group 局部样式：标题、页脚、导航、布局、其他页面结构元素
     1)顶部导航栏样式（.navbar）
@@ -176,6 +177,20 @@ img[alt="icon"] {
 /*用户名样式 .user-name*/
 .user-name {
   font-weight: bold;
+}
+
+/*自定义表单样式：下绿线表单 .form-control-green-border*/
+.form-control-green-border {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #00cc66;
+}
+
+.form-control-green-border:focus {
+  outline: 0;
+  -webkit-box-shadow: 0px 2px 3px rgba(0, 204, 102, .6);
+  box-shadow: 0px 2px 3px rgba(0, 204, 102, .6);
 }
 
 /*@3 group 局部样式：标题、页脚、导航、布局、其他页面结构元素-----------------*/ 
@@ -577,7 +592,7 @@ a.user-dashboard-bg:active {
 
 .send-act-box > form {
   margin-left: 45px;
-  width: 440px;
+  width: 83%;
   display: inline-block;
 }
 
@@ -585,7 +600,7 @@ a.user-dashboard-bg:active {
   display: inline-block;
   position: absolute;
   top: 14px;
-  right: 10px;
+  right: 1%;
   width: 50px;
 }
 
@@ -610,8 +625,88 @@ a.user-dashboard-bg:active {
 
 .send-act-box #send-act-btn {
   margin-left: 45px;
+  margin-top: 10px;
+  width: 83%;
+}
+
+/*心情输入框 .input-emotion-form*/
+.send-act-box .input-emotion-form {
+  display: none;
+  margin-left: 45px;
   margin-top: 5px;
-  width: 440px;
+}
+
+.send-act-box .input-emotion-form > label {
+  font-size: 14px;
+  font-weight: 100;
+  border: 1px solid #00cc66;
+  color: #00cc66;
+  border-radius: 3px;
+  padding: 0 2px 0 2px;
+}
+
+.send-act-box .input-emotion-form > input {
+  width: 60%;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/*学习资料输入框 .input-xxzl-form*/
+.input-xxzl-form {
+  display: none;
+  margin-top: 10px;
+  margin-left: 45px;
+}
+
+.send-act-box .input-xxzl-form > label {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.send-act-box .input-xxzl-form > input {
+  display: inline-block; 
+}
+
+.send-act-box .input-xxzl-form > input:nth-child(1) {
+  margin-left: 10px;
+}
+
+/*学习笔记输入框 .input-xxbj-form*/
+.send-act-box .input-xxbj-form {
+  display: none;
+  margin-top: 15px;
+  margin-left: 45px;
+  margin-bottom: 5px;
+}
+
+.send-act-box .input-xxbj-form > label {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.send-act-box .input-xxbj-form > button {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/*笔记选择窗口模态框  #pick-note-modal*/
+#pick-note-modal a {
+  color: #00cc66;
+  font-size: 16px;
+}
+
+#pick-note-modal ul {
+
+}
+
+#pick-note-modal ul li {
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+
+#pick-note-modal ul li > button {
+  float: right;
+  margin-right: 60px;
 }
 
 /*登录后的#right-reco右边推荐栏css*/

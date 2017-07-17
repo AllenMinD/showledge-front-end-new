@@ -160,6 +160,20 @@
                     <a id="input-xxbj" data-toggle="tooltip" data-placement="right" title="学习笔记"><span class="fa fa-book fa-lg fa-fw"></span></a>
                   </li>
                 </ul>
+                <div class="input-emotion-form">
+                  <label for="emotion-form">心情</label>
+                  <input type="text" class="form-control-green-border" id="emotion-form">
+                </div>
+                <div class="input-xxzl-form">
+                  <label for="xxzl">学习资料</label>
+                  <input type="text" class="form-control-green-border" placeholder="http://"><span class="fa fa-external-link"></span>
+                  <input type="text" class="form-control-green-border" placeholder="资料标题">
+                  <button class="btn btn-sm btn-green" id="add-xxzl">添加</button>
+                </div>
+                <div class="input-xxbj-form">
+                  <label for="xxbj-form" id="xxbj-form">学习笔记</label>
+                  <button class="btn btn-sm btn-green" data-toggle="modal" data-target="#pick-note-modal">从我的笔记中选择</button>
+                </div>
                 <button class="btn btn-green" id="send-act-btn">发布动态</button>
               </div>
               <!-- 标签页头 -->
@@ -492,6 +506,33 @@
         </div>
       </div>
     </div>    
+    
+    <!-- 笔记选择窗口模态框 -->
+    <div class="modal fade" id="pick-note-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">我的学习笔记</h4>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li id="pick-note-001">
+                <a href="note-page.html">我的python笔记</a>
+                <button class="btn btn-warning btn-info btn-sm pick-btn">选择</button>
+              </li>
+              <li id="pick-note-002">
+                <a href="note-page.html">我的java笔记</a>
+                <button class="btn btn-warning btn-info btn-sm pick-btn">选择</button>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-green" data-dismiss="modal">选好了</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->    
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.1.1.min.js"></script>
@@ -499,6 +540,9 @@
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <!-- 警告框js -->
     <script src="js/alert.js"></script>
+
+    <!-- index-login.js -->
+    <script src="js/index-login.js"></script>
     
     <script>
       $(function () { $("[data-toggle='tooltip']").tooltip(); });
