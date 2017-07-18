@@ -1254,14 +1254,39 @@ a.user-dashboard-bg:active {
   border-left: 2px solid #00cc66;
 }
 
-.reply-comment > span,
-.reply-comment > .reply-btn {
+.reply-comment > ul > li {
+  margin-bottom: 30px;
+}
+
+.reply-comment > ul > li > span,
+.reply-comment > ul > li > .reply-btn {
   color: #aaa; 
   margin-right: 10px;
 }
 
-.reply-comment > .reply-btn:hover {
+.reply-comment > ul > li > .reply-btn:hover {
   color: #00cc66;
+}
+
+/*回复框 .reply-block*/
+.reply-comment .reply-block {
+  margin-top: 10px;
+  display: none;
+}
+
+.reply-comment .reply-block > div {
+  height: 45px;
+}
+
+.reply-comment .reply-block .cancel-reply-btn {
+  background-color: white;
+  color: #ababab;
+}
+
+.reply-comment .reply-block .cancel-reply-btn,
+.reply-comment .reply-block .send-reply-btn {
+  margin-top: 10px;
+  float: right;
 }
 
 
@@ -1292,6 +1317,5 @@ a.user-dashboard-bg:active {
   width: 100px;
   margin-bottom: 10px;
 }
-
 
 /*@5 group 处理覆盖和例外情况-----------------*/

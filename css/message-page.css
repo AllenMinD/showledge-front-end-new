@@ -26,6 +26,26 @@
   margin-top: 5px;
 }
 
+/*.reply-block*/
+.reply-block {
+  display: none;
+  margin: 20px;
+}
+
+.reply-block > div {
+  height: 45px;
+}
+
+.reply-block > div > .cancel-reply-btn {
+  background-color: white;
+  color: #ababab;
+}
+
+.reply-block > div > .cancel-reply-btn,
+.reply-block > div > .send-reply-btn {
+  margin-top: 10px;
+  float: right;
+}
 
 /*letter-list*/
 #letter-list ul li p {

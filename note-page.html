@@ -147,19 +147,40 @@
                         <a class="reply-btn"><span class="fa fa-comment fa-fw"></span>回复</a>
                       </div>
                       <div class="reply-comment">
-                        <p>
-                          <a href="user.html" class="user-name">飞翔的粑粑</a>
-                          <span class="fa fa-caret-right fa-fw"></span>
-                          <a href="user.html" class="user-name">奥利奥饼干</a>
-                          <span class="fa fa-fw"></span>
-                          谢谢支持(回复正文)
-                        </p>
-                        <span>2017.01.06 14:40</span>
-                        <a class="reply-btn"><span class="fa fa-comment fa-fw"></span>回复</a>
+                        <ul>
+                          <li id="reply-commen-001">
+                            <p>
+                              <a href="user.html" class="user-name at-who">飞翔的粑粑</a>
+                              <span class="fa fa-caret-right fa-fw"></span>
+                              <a href="user.html" class="user-name">奥利奥饼干</a>
+                              <span class="fa fa-fw"></span>
+                              谢谢支持(回复正文)
+                            </p>
+                            <span>2017.01.06 14:40</span>
+                            <a class="reply-btn"><span class="fa fa-comment fa-fw"></span>回复</a>
+                          </li>
+                          <li id="reply-commen-002">
+                            <p>
+                              <a href="user.html" class="user-name at-who">饼干</a>
+                              <span class="fa fa-caret-right fa-fw"></span>
+                              <a href="user.html" class="user-name">飞翔的粑粑</a>
+                              <span class="fa fa-fw"></span>
+                              谢谢支持(回复正文)
+                            </p>
+                            <span>2017.01.06 14:40</span>
+                            <a class="reply-btn"><span class="fa fa-comment fa-fw"></span>回复</a>
+                          </li>
+                        </ul>
+                        <div class="reply-block">
+                          <textarea name='reply-comment-area' id='reply-comment-area' class='form-control' rows='4' placeholder='你的评论写这里哦~'></textarea>
+                          <div>
+                            <button class='btn btn-green send-reply-btn'>提交回复</button>
+                            <button class='btn cancel-reply-btn'>取消</button>
+                          </div>
+                        </div>
                       </div>
                     </li>
                   </ul>
-
                 </div><!-- comment-list end -->
               </div>              
             </div>
@@ -178,6 +199,33 @@
     <script src="js/alert.js"></script>
     <!-- 关注按钮切换js -->
     <script src="js/reco-follow-btn-toggle.js"></script>
+
+    <!-- 回复弹框js -->
+    <script>
+      jQuery(document).ready(function($) {
+        /*点击回复按钮*/
+        $(".reply-btn").click(function(event) {
+          if ($(this).parents("div.reply-comment").attr("class") == "reply-comment") {
+            var atWho = $(this).parent().find("a.at-who").text();
+            $(this).parents("li").find("div.reply-block textarea").attr("placeholder", "@ " + atWho);
+            $(this).parents("li").find("div.reply-block").slideDown();
+          }
+          else {
+            $(this).parents("li").find("div.reply-block textarea").attr("placeholder", "写下你的见解~");
+            $(this).parents("li").find("div.reply-block").slideDown();
+          } 
+        });
+        /*点击取消按钮*/
+        $(".cancel-reply-btn").click(function(event) {
+          $(this).parents("li").find("div.reply-block").slideUp();
+        });
+        /*点击提交回复按钮*/
+        $(".send-reply-btn").click(function(event) {
+          $(this).parents("li").find("div.reply-block").css('display', 'none');
+          alert("回复提交成功");
+        });
+      });
+    </script>
     
     <script>
       $(function () { $("[data-toggle='tooltip']").tooltip(); });
