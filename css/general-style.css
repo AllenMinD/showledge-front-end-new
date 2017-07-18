@@ -21,6 +21,7 @@
     11)font-awesome的icon的样式(.fa)
     12)用户名样式(.user-name)
     13)自定义表单样式：下绿线表单（.form-control-green-border）
+    14)页面右侧推荐栏的关注按钮切换类（.follow-btn .not-follow）
 
 3 - @3 group 局部样式：标题、页脚、导航、布局、其他页面结构元素
     1)顶部导航栏样式（.navbar）
@@ -191,6 +192,21 @@ img[alt="icon"] {
   outline: 0;
   -webkit-box-shadow: 0px 2px 3px rgba(0, 204, 102, .6);
   box-shadow: 0px 2px 3px rgba(0, 204, 102, .6);
+}
+
+/*页面右侧推荐栏的关注按钮切换类 .follow-btn .not-follow*/
+a.follow-btn {;
+  float: right;
+  color: #42c02e;
+  border-radius: 18px;
+  border: 1px solid #42c02e;  
+}
+a.not-follow {
+  color: white;
+  background-color: #42c02e;
+}
+a.follow-btn:hover {
+  text-decoration: none;
 }
 
 /*@3 group 局部样式：标题、页脚、导航、布局、其他页面结构元素-----------------*/ 
@@ -404,15 +420,7 @@ img[alt="icon"] {
 }
 
 #index-page #right-reco .xb-list > li > a.follow-btn {
-  float: right;
-  color: #42c02e;
-  border-radius: 18px;
-  border: 1px solid #42c02e;
-  padding: 8px;
-}
-
-#index-page #right-reco .xb-list > li > a.follow-btn:hover {
-  text-decoration: none;
+  padding: 3px 6px 3px 6px;
 }
 
 #index-page #right-reco .xb-list > li > a.reco-user-name {
@@ -745,11 +753,7 @@ a.user-dashboard-bg:active {
 }
 
 #index-login-page #right-reco .xb-list > li > a.follow-btn {
-  float: right;
-  color: #42c02e;
-  border-radius: 18px;
-  border: 1px solid #42c02e;
-  padding: 3px 4px 3px 4px;
+  padding: 3px 6px 3px 6px;
   font-size: 10px; 
 }
 
@@ -995,7 +999,11 @@ a.user-dashboard-bg:active {
 #study-idol > ul > li > .follow-btn {
   float: right;
   margin-top: 8px;
+  border: 1px solid #00cc66;
+  border-radius: 3px;
+  padding: 3px 5px 3px 5px;
 }
+
 
 /*personal-page.html中间内容栏 标签内容 #study-watcher*/
 #study-watcher > ul > li {
@@ -1019,10 +1027,13 @@ a.user-dashboard-bg:active {
 #study-watcher > ul > li > .follow-btn {
   float: right;
   margin-top: 8px;
+  border: 1px solid #00cc66;
+  border-radius: 3px;
+  padding: 3px 5px 3px 5px;
 }
 
 /*personal-page.html中间内容栏 标签内容 #collection*/
-.cancel-collection-btn {
+.collection-btn {
   float: right;
   margin-top: 10px;
 }
@@ -1062,11 +1073,7 @@ a.user-dashboard-bg:active {
 }
 
 #personal-page #right-reco .xb-list > li > a.follow-btn {
-  float: right;
-  color: #42c02e;
-  border-radius: 18px;
-  border: 1px solid #42c02e;
-  padding: 3px 4px 3px 4px;
+  padding: 3px 6px 3px 6px;
   font-size: 10px; 
 }
 
@@ -1095,9 +1102,16 @@ a.user-dashboard-bg:active {
 .note-info .follow-btn {
   display: inline-block;
   position: absolute;
+  color: #00cc66;
+  background-color: white;
   left: 160px;
-  padding: 3px 8px 3px 8px;
+  padding: 2px 8px 2px 8px;
   border-radius: 20px;
+}
+
+.note-info .not-follow {
+  color: white;
+  background-color: #00cc66;
 }
 
 .note-info .note-count {
@@ -1107,6 +1121,11 @@ a.user-dashboard-bg:active {
   top: 30px;
   font-size: 13px;
 }
+
+.note-info .note-count > span {
+  margin-right: 15px;
+}
+
 /*笔记标签（分类）*/
 .note-category {
   margin-top: 30px;
@@ -1158,7 +1177,7 @@ a.user-dashboard-bg:active {
 .input-comment #input-comment-area {
   margin-left: 65px;
   display: inline-block;
-  width: 525px;
+  width: 89%;
 }
 
 .input-comment .send-comment-btn {
@@ -1170,6 +1189,10 @@ a.user-dashboard-bg:active {
 /*笔记的评论区域*/
 .comments-list {
   margin-top: 50px;
+}
+
+.comments-list a {
+  color: #00cc66;
 }
 
 .comments-list .comments-list-count {
@@ -1228,7 +1251,7 @@ a.user-dashboard-bg:active {
 .comments-list > ul > li > .reply-comment {
   margin-top: 15px;
   padding-left: 15px;
-  border-left: 2px solid #ababab;
+  border-left: 2px solid #00cc66;
 }
 
 .reply-comment > span,

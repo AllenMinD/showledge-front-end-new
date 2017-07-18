@@ -297,6 +297,10 @@
                           <span class="glyphicon glyphicon-heart"></span>
                           <span>543</span>
                         </div>
+                        <div class="collection-count">
+                          <span class="fa fa-bookmark"></span>
+                          <span>665</span>
+                        </div> 
                         <div class="share-count">
                           <span class="glyphicon glyphicon-share"></span>
                           <span>665</span>
@@ -326,6 +330,10 @@
                           <span class="glyphicon glyphicon-heart"></span>
                           <span>543</span>
                         </div>
+                        <div class="collection-count">
+                          <span class="fa fa-bookmark"></span>
+                          <span>665</span>
+                        </div> 
                         <div class="share-count">
                           <span class="glyphicon glyphicon-share"></span>
                           <span>665</span>
@@ -363,10 +371,10 @@
                           <span class="glyphicon glyphicon-heart"></span>
                           <span>543</span>
                         </div>
-                        <div class="share-count">
+                        <div class="collection-count">
                           <span class="fa fa-bookmark"></span>
                           <span>665</span>
-                        </div>                      
+                        </div>                       
                       </div>
                     </li>
                     <li class="box" id="by-map-002">
@@ -396,7 +404,7 @@
                           <span class="glyphicon glyphicon-heart"></span>
                           <span>543</span>
                         </div>
-                        <div class="share-count">
+                        <div class="collection-count">
                           <span class="fa fa-bookmark"></span>
                           <span>665</span>
                         </div>                      
@@ -414,19 +422,19 @@
                 <ul class="xb-list">
                   <li>
                     <a href="personal-page.html" target="_blank"><img src="image/user-avatar2.jpg" alt="用户头像-ssm" class="avatar-ssm"></a>
-                    <a class="follow-btn"><span class="glyphicon glyphicon-plus"></span>关注</a>
+                    <a class="follow-btn"><span class='fa fa-plus-circle'></span>关注</a>
                     <a href="personal-page.html" target="_blank" class="reco-user-name">奥利奥</a>
                     <p>30k粉丝</p>
                   </li>
                   <li>
                     <a href="personal-page.html" target="_blank"><img src="image/user-avatar1.jpg" alt="用户头像-ssm" class="avatar-ssm"></a>
-                    <a class="follow-btn"><span class="glyphicon glyphicon-plus"></span>关注</a>
+                    <a class="follow-btn"><span class='fa fa-plus-circle'></span>关注</a>
                     <a href="personal-page.html" target="_blank" class="reco-user-name">奥利奥</a>
                     <p>30k粉丝</p>
                   </li>
                   <li>
                     <a href="personal-page.html" target="_blank"><img src="image/user-avatar2.jpg" alt="用户头像-ssm" class="avatar-ssm"></a>
-                    <a class="follow-btn"><span class="glyphicon glyphicon-plus"></span>关注</a>
+                    <a class="follow-btn"><span class='fa fa-plus-circle'></span>关注</a>
                     <a href="personal-page.html" target="_blank" class="reco-user-name">奥利奥</a>
                     <p>30k粉丝</p>
                   </li>                                     
@@ -525,6 +533,10 @@
                 <a href="note-page.html">我的java笔记</a>
                 <button class="btn btn-warning btn-info btn-sm pick-btn">选择</button>
               </li>
+              <li id="pick-note-003">
+                <a href="note-page.html">我的java笔记</a>
+                <button class="btn btn-warning btn-info btn-sm pick-btn">选择</button>
+              </li>
             </ul>
           </div>
           <div class="modal-footer">
@@ -540,9 +552,10 @@
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <!-- 警告框js -->
     <script src="js/alert.js"></script>
-
     <!-- index-login.js -->
     <script src="js/index-login.js"></script>
+    <!-- 页面右边推荐栏的关注按钮切换js -->
+    <script src="js/reco-follow-btn-toggle.js"></script>    
     
     <script>
       $(function () { $("[data-toggle='tooltip']").tooltip(); });

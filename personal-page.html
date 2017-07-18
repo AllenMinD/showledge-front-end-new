@@ -225,6 +225,10 @@
                         <span class="glyphicon glyphicon-heart"></span>
                         <span>543</span>
                       </div>
+                      <div class="collection-count">
+                          <span class="fa fa-bookmark"></span>
+                          <span>665</span>
+                        </div> 
                       <div class="share-count">
                         <span class="glyphicon glyphicon-share"></span>
                         <span>665</span>
@@ -254,6 +258,10 @@
                         <span class="glyphicon glyphicon-heart"></span>
                         <span>543</span>
                       </div>
+                      <div class="collection-count">
+                          <span class="fa fa-bookmark"></span>
+                          <span>665</span>
+                        </div> 
                       <div class="share-count">
                         <span class="glyphicon glyphicon-share"></span>
                         <span>665</span>
@@ -291,7 +299,7 @@
                           <span class="glyphicon glyphicon-heart"></span>
                           <span>543</span>
                         </div>
-                        <div class="share-count">
+                        <div class="collection-count">
                           <span class="fa fa-bookmark"></span>
                           <span>665</span>
                         </div>                      
@@ -324,7 +332,7 @@
                           <span class="glyphicon glyphicon-heart"></span>
                           <span>543</span>
                         </div>
-                        <div class="share-count">
+                        <div class="collection-count">
                           <span class="fa fa-bookmark"></span>
                           <span>665</span>
                         </div>                      
@@ -338,19 +346,19 @@
                     <a href="user.html"><img src="image/user-avatar1.jpg" alt="用户头像-sm" class="avatar-sm"></a>
                     <a href="user.html" class="user-name">奥利奥</a>
                     <p class="user-summary">扭一扭、舔一舔、泡一泡。嗯~</p>
-                    <button class="btn btn-danger follow-btn">取消关注</button>
+                    <a class="follow-btn not-follow">已关注</a>
                   </li>
                   <li class="box" id="idol-002">
                     <a href="user.html"><img src="image/user-avatar2.jpg" alt="用户头像-sm" class="avatar-sm"></a>
                     <a href="user.html" class="user-name">飞翔的粑粑</a>
                     <p class="user-summary">萌新程序员~努力学习中！</p>
-                    <button class="btn btn-danger follow-btn">取消关注</button>
+                    <a class="follow-btn not-follow">已关注</a>
                   </li>
                   <li class="box" id="idol-003">
                     <a href="user.html"><img src="image/user-avatar3.jpg" alt="用户头像-sm" class="avatar-sm"></a>
                     <a href="user.html" class="user-name">脆脆鲨</a>
                     <p class="user-summary">Make the world a better place~</p>
-                    <button class="btn btn-danger follow-btn">取消关注</button>
+                    <a class="follow-btn not-follow">已关注</a>
                   </li>                  
                 </ul>
               </div>
@@ -360,26 +368,26 @@
                     <a href="user.html"><img src="image/user-avatar1.jpg" alt="用户头像-sm" class="avatar-sm"></a>
                     <a href="user.html" class="user-name">奥利奥</a>
                     <p class="user-summary">扭一扭、舔一舔、泡一泡。嗯~</p>
-                    <button class="btn btn-green follow-btn">关注</button>
+                    <a class="follow-btn"><span class='fa fa-plus-circle'></span>关注</a>
                   </li>
                   <li class="box" id="watcher-002">
                     <a href="user.html"><img src="image/user-avatar2.jpg" alt="用户头像-sm" class="avatar-sm"></a>
                     <a href="user.html" class="user-name">飞翔的粑粑</a>
                     <p class="user-summary">萌新程序员~努力学习中！</p>
-                    <button class="btn btn-green follow-btn">关注</button>
+                    <a class="follow-btn"><span class='fa fa-plus-circle'></span>关注</a>
                   </li>
                   <li class="box" id="iwatcher-003">
                     <a href="user.html"><img src="image/user-avatar3.jpg" alt="用户头像-sm" class="avatar-sm"></a>
                     <a href="user.html" class="user-name">脆脆鲨</a>
                     <p class="user-summary">Make the world a better place~</p>
-                    <button class="btn btn-green follow-btn">关注</button>
+                    <a class="follow-btn"><span class='fa fa-plus-circle'></span>关注</a>
                   </li>                  
                 </ul>
               </div>  
               <div role="tabpanel" class="tab-pane" id="collection">
                 <ul>
                   <li class="box" id="collection-001">
-                    <button class="btn btn-danger cancel-collection-btn">取消收藏</button>
+                    <button class="btn collection-btn btn-success btn-danger">取消收藏</button>
                     <div class="user-info">
                       <div class="user-avatar">
                         <a href="user.html"><img src="image/user-avatar3.jpg" alt="用户头像-sm" class="avatar-sm"></a>
@@ -413,7 +421,7 @@
                     </div>
                   </li>
                   <li class="box" id="collection-002">
-                    <button class="btn btn-danger cancel-collection-btn">取消收藏</button>
+                    <button class="btn collection-btn btn-success btn-danger">取消收藏</button>
                     <div class="user-info">
                       <div class="user-avatar">
                         <a href="user.html"><img src="image/user-avatar2.jpg" alt="用户头像-sm" class="avatar-sm"></a>
@@ -452,19 +460,19 @@
                 <ul class="xb-list">
                   <li>
                     <a href="personal-page.html" target="_blank"><img src="image/user-avatar2.jpg" alt="用户头像-ssm" class="avatar-ssm"></a>
-                    <a class="follow-btn"><span class="glyphicon glyphicon-plus"></span>关注</a>
+                    <a class="follow-btn"><span class='fa fa-plus-circle'></span>关注</a>
                     <a href="personal-page.html" target="_blank" class="reco-user-name">奥利奥</a>
                     <p>30k粉丝</p>
                   </li>
                   <li>
                     <a href="personal-page.html" target="_blank"><img src="image/user-avatar1.jpg" alt="用户头像-ssm" class="avatar-ssm"></a>
-                    <a class="follow-btn"><span class="glyphicon glyphicon-plus"></span>关注</a>
+                    <a class="follow-btn"><span class='fa fa-plus-circle'></span>关注</a>
                     <a href="personal-page.html" target="_blank" class="reco-user-name">奥利奥</a>
                     <p>30k粉丝</p>
                   </li>
                   <li>
                     <a href="personal-page.html" target="_blank"><img src="image/user-avatar2.jpg" alt="用户头像-ssm" class="avatar-ssm"></a>
-                    <a class="follow-btn"><span class="glyphicon glyphicon-plus"></span>关注</a>
+                    <a class="follow-btn"><span class='fa fa-plus-circle'></span>关注</a>
                     <a href="personal-page.html" target="_blank" class="reco-user-name">奥利奥</a>
                     <p>30k粉丝</p>
                   </li>                                     
@@ -552,6 +560,19 @@
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <!-- 警告框js -->
     <script src="js/alert.js"></script>
+    <!-- 页面右边推荐栏的关注按钮切换js -->
+    <script src="js/reco-follow-btn-toggle.js"></script>
+    <!-- 收藏按钮切换js -->
+    <script>
+      jQuery(document).ready(function($) {
+        $(".collection-btn").click(function(event) {
+          $(this).toggleClass("btn-danger");
+          if ($(this).attr("class") == "btn collection-btn btn-success btn-danger") 
+            $(this).text("取消收藏");   
+          else $(this).text("收藏");
+        });
+      });      
+    </script>
     
     <script>
       $(function () { $("[data-toggle='tooltip']").tooltip(); });
