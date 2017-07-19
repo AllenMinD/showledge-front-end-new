@@ -36,6 +36,7 @@
 
 
 5 - @5 group 处理覆盖和例外情况
+    1)点赞等按钮的激活状态（.green-count）
 
 */
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -343,6 +344,7 @@ a.follow-btn:hover {
 
 .share-count:hover,
 .comments-count:hover,
+.collection-count:hover,
 .like-count:hover {
   color: #00cc66;
   cursor: pointer;
@@ -1159,9 +1161,16 @@ a.user-dashboard-bg:active {
   padding-bottom: 10px;
 }
 /*笔记的点赞收藏按钮*/
-.function-btn {
+.note-like-and-collect-btn {
   text-align: center;
 }
+
+.note-like-and-collect-btn-active {
+  color: #00cc66;
+  background-color: #f3fff9;
+  border: 1px solid #00cc66;
+}
+
 /*输入评论区域*/
 .input-comment {
   position: relative;
@@ -1238,14 +1247,19 @@ a.user-dashboard-bg:active {
 
 }
 
-.comments-list > ul > li > .comment-function-btn > a {
+.comments-list > ul > li > .comment-function-btn > a {  /*.good-btn 和 .reply-btn*/
   display: inline-block;
   margin-right: 15px;
   color: #aaa;
 }
 
+.comments-list > ul > li > .comment-function-btn > a.green-good-btn { /*激活后的.good-btn*/
+  color: #00cc66;
+}
+
 .comments-list > ul > li > .comment-function-btn > a:hover {
   color: #00cc66;
+  text-decoration: none;
 }
 
 .comments-list > ul > li > .reply-comment {
@@ -1266,6 +1280,7 @@ a.user-dashboard-bg:active {
 
 .reply-comment > ul > li > .reply-btn:hover {
   color: #00cc66;
+  text-decoration: none;
 }
 
 /*回复框 .reply-block*/
@@ -1309,13 +1324,31 @@ a.user-dashboard-bg:active {
 #edit-note-page .toolbar {
     border-top: 1px solid #ccc;
 }
-#edit-note-page .text {
+#edit-note-page .note-text {
   height: 450px;
 }
 
 #edit-note-page .send-back-btn > button {
-  width: 100px;
+
   margin-bottom: 10px;
 }
+/*分类选择表单 #category-select*/
+#edit-note-page #category-select {
+  margin-top: 20px;
+  display: none;
+}
 
+#edit-note-page #category-select label {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#edit-note-page #category-select > button.btn-info {
+  margin-top: 10px;
+  width: 220px;
+}
 /*@5 group 处理覆盖和例外情况-----------------*/
+/*点赞等按钮的激活状态（.green-count）（主要用于.like-count .collection-count等）*/
+.act-info > div.green-count {
+  color: #00cc66;
+}

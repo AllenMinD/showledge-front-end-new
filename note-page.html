@@ -113,7 +113,7 @@
                   <p>龟叔给Python的定位是“优雅”、“明确”、“简单”，所以Python程序看上去总是简单易懂，初学者学Python，不但入门容易，而且将来深入下去，可以编写那些非常非常复杂的程序。</p>
                 </div>
                 <hr>
-                <div class="function-btn">
+                <div class="note-like-and-collect-btn">
                   <button class="btn btn-lg btn-green like-btn"><span class="fa fa-heart fa-fw"></span>点赞</button>
                   <button class="btn btn-lg btn-green collect-btn"><span class="fa fa-bookmark fa-fw"></span>收藏</button>
                 </div>
@@ -199,34 +199,9 @@
     <script src="js/alert.js"></script>
     <!-- 关注按钮切换js -->
     <script src="js/reco-follow-btn-toggle.js"></script>
+    <!-- note-page.js -->
+    <script src="js/note-page.js"></script>
 
-    <!-- 回复弹框js -->
-    <script>
-      jQuery(document).ready(function($) {
-        /*点击回复按钮*/
-        $(".reply-btn").click(function(event) {
-          if ($(this).parents("div.reply-comment").attr("class") == "reply-comment") {
-            var atWho = $(this).parent().find("a.at-who").text();
-            $(this).parents("li").find("div.reply-block textarea").attr("placeholder", "@ " + atWho);
-            $(this).parents("li").find("div.reply-block").slideDown();
-          }
-          else {
-            $(this).parents("li").find("div.reply-block textarea").attr("placeholder", "写下你的见解~");
-            $(this).parents("li").find("div.reply-block").slideDown();
-          } 
-        });
-        /*点击取消按钮*/
-        $(".cancel-reply-btn").click(function(event) {
-          $(this).parents("li").find("div.reply-block").slideUp();
-        });
-        /*点击提交回复按钮*/
-        $(".send-reply-btn").click(function(event) {
-          $(this).parents("li").find("div.reply-block").css('display', 'none');
-          alert("回复提交成功");
-        });
-      });
-    </script>
-    
     <script>
       $(function () { $("[data-toggle='tooltip']").tooltip(); });
     </script>
