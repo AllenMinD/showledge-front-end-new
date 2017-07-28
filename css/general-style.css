@@ -963,6 +963,7 @@ a.user-dashboard-bg:active {
 
 /*用户地址和加入日期的样式*/
 .user-profile #user-address,
+.user-profile #user-graduation,
 .user-profile #user-join-date {
   font-size: 15px;
   color: #7f7f7f;
