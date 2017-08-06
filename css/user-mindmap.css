@@ -55,6 +55,7 @@ body {
 
 #back > a {
   text-decoration: none;
+  display: block;
   color: #00cc66;
 }
 

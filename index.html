@@ -34,14 +34,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">秀知识</a>
+          <a class="navbar-brand" href="index.html">秀知识</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="index-login.html"><span class="fa fa-home fa-fw"></span>主页</a></li>
-            <li><a href="#"><span class="fa fa-wechat fa-fw"></span>小程序</a></li>
+            <li><a href="#" target="_blank"><span class="fa fa-wechat fa-fw"></span>小程序</a></li>
           </ul>
           <form class="navbar-form navbar-left">
             <div class="form-group">
@@ -123,7 +123,7 @@
                   <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                       <div class="forget-password">
-                        <a href="#" style="">忘记密码</a>
+                        <a href="javascript:;" target="_blank">忘记密码</a>
                         <button type="button" id="signin-btn" class="btn btn-default btn-lg" style="font-size:16px;float:right;margin-right:50px;">登录</button>
                       </div>
                     </div>
@@ -162,7 +162,7 @@
                   </div>
                   <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                      <label>点击「注册」按钮，即代表你同意<a href="#">《秀知识协议》</a></label>
+                      <label>点击「注册」按钮，即代表你同意<a href="javascript:;" target="_blank">《秀知识协议》</a></label>
                       <button type="button" id="signup-btn" class="btn btn-default btn-lg" style="font-size:16px;float:right;margin-right:50px;">注册</button>
                     </div>
                   </div>
@@ -184,13 +184,12 @@
         <div class="col-md-10 main">
           <div class="row">
             <!-- 左边功能按钮栏 -->
-            <div class="col-md-2" id="left-sidebar">
+            <div class="col-md-3" id="left-sidebar">
               <div class="box">
-                <button class="btn cat btn-green">全部</button>
-                <button class="btn cat btn-green">前端</button>
-                <button class="btn cat btn-green">后端</button>
-                <button class="btn cat btn-green">java</button>
-                <button class="btn cat btn-green">html</button>
+                <a href="topic-page.html" target="_blank" style="text-decoration:none;"><button class="btn cat btn-green">前端</button></a>
+                <a href="topic-page.html" target="_blank" style="text-decoration:none;"><button class="btn cat btn-green">后端</button></a>
+                <a href="topic-page.html" target="_blank" style="text-decoration:none;"><button class="btn cat btn-green">java</button></a>
+                <a href="topic-page.html" target="_blank" style="text-decoration:none;"><button class="btn cat btn-green">html</button></a>
               </div>
             </div><!-- 左边功能按钮end -->
 
@@ -210,8 +209,8 @@
                     <li class="box" id="hot-act-001">
                       <div class="user-info">
                         <div class="user-avatar">
-                          <a href="user.html"><img src="image/user-avatar1.jpg" alt="用户头像-sm" class="avatar-sm"></a>
-                          <a href="user.html" class="user-name">飞翔的粑粑</a>
+                          <a href="personal-page.html" target="_blank"><img src="image/user-avatar1.jpg" alt="用户头像-sm" class="avatar-sm"></a>
+                          <a href="personal-page.html" class="user-name" target="_blank">飞翔的粑粑</a>
                           <span> - </span>
                           <span class="user-act-time">2017.7.1 20:30:30</span>
                         </div>
@@ -226,12 +225,12 @@
                       <div class="user-library">
                         <div class="xxzl">
                           <span>学习资料</span>
-                          <a href="#">《python学习手册》</a>
-                          <a href="http://www.imooc.com/course/list?c=python">慕课网python教程</a>
+                          <a href="https://www.amazon.cn/s?ie=UTF8&search-type=ss&index=books&field-keywords=python%D1%A7%CF%B0%CA%D6%B2%E1&tag=baiduiclickcn-23&ref=pz_ic_Book_1731_208" target="_blank">《python学习手册》</a>
+                          <a href="http://www.imooc.com/course/list?c=python" target="_blank">慕课网python教程</a>
                         </div> 
                         <div class="xxbj">
                           <span>学习笔记</span>
-                          <a href="#" class="user-note-entrance">我的pyhton学习笔记</a>
+                          <a href="note-page.html" class="user-note-entrance" target="_blank">我的pyhton学习笔记</a>
                         </div>              
                       </div>
                       <div class="act-info">
@@ -252,8 +251,8 @@
                     <li class="box" id="hot-act-002">
                       <div class="user-info">
                         <div class="user-avatar">
-                          <a href="user.html"><img src="image/user-avatar2.jpg" alt="用户头像-sm" class="avatar-sm"></a>
-                          <a href="user.html" class="user-name">飞翔的便便</a>
+                          <a href="personal-page.html" target="_blank"><img src="image/user-avatar2.jpg" alt="用户头像-sm" class="avatar-sm"></a>
+                          <a href="personal-page.html" class="user-name" target="_blank">飞翔的便便</a>
                           <span> - </span>
                           <span class="user-act-time">2017.7.3 20:30:30</span>
                         </div>
@@ -268,7 +267,7 @@
                       <div class="user-library">
                         <div class="xxzl">
                           <span>学习资料</span>
-                          <a href="#">《算法导论》</a>
+                          <a href="https://www.amazon.cn/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA-Thomas-H-Cormen/dp/B00AK7BYJY/ref=sr_1_1?s=books&ie=UTF8&qid=1502002841&sr=1-1&keywords=%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA" target="_blank">《算法导论》</a>
                         </div> 
                         <div class="xxbj">
                           <span>学习笔记</span>
@@ -291,14 +290,15 @@
                       </div>
                     </li>
                   </ul>
+                  <button class="btn btn-green load-more load-more-act">加载更多</button>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="hot-note">
                   <ul>
                     <li class="box" id="hot-note-001">
                       <div class="user-info">
                         <div class="user-avatar">
-                          <a href="user.html"><img src="image/user-avatar2.jpg" alt="用户头像-sm" class="avatar-sm"></a>
-                          <a href="user.html" class="user-name">飞翔的便便</a>
+                          <a href="personal-page.html" target="_blank"><img src="image/user-avatar2.jpg" alt="用户头像-sm" class="avatar-sm"></a>
+                          <a href="personal-page.html" class="user-name" target="_blank">飞翔的便便</a>
                           <span> - </span>
                           <span class="user-act-time">2017.7.3 20:30:30</span>
                         </div>
@@ -330,8 +330,8 @@
                     <li class="box" id="hot-note-002">
                       <div class="user-info">
                         <div class="user-avatar">
-                          <a href="user.html"><img src="image/user-avatar1.jpg" alt="用户头像-sm" class="avatar-sm"></a>
-                          <a href="user.html" class="user-name">飞翔的便便</a>
+                          <a href="personal-page.html" target="_blank"><img src="image/user-avatar1.jpg" alt="用户头像-sm" class="avatar-sm"></a>
+                          <a href="personal-page.html" class="user-name" target="_blank">飞翔的便便</a>
                           <span> - </span>
                           <span class="user-act-time">2017.7.3 20:30:30</span>
                         </div>
@@ -361,25 +361,26 @@
                       </div>                                         
                     </li>
                   </ul>
+                  <button class="btn btn-green load-more load-more-note">加载更多</button>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="hot-map">
                   <ul>
                     <li class="box" id="hot-map-001">
                       <div class="user-info">
                         <div class="user-avatar">
-                          <a href="user.html"><img src="image/user-avatar1.jpg" alt="用户头像-sm" class="avatar-sm"></a>
-                          <a href="user.html" class="user-name">飞翔的便便</a>
+                          <a href="personal-page.html" target="_blank"><img src="image/user-avatar1.jpg" alt="用户头像-sm" class="avatar-sm"></a>
+                          <a href="personal-page.html" class="user-name" target="_blank">飞翔的便便</a>
                           <span> - </span>
                           <span class="user-act-time">2017.7.3 20:30:30</span>
                         </div>
                       </div>
-                      <a href="map-page.html" target="_blank" class="map-title-sm">python学习重点知识谱图</a>
+                      <a href="user-mindmap.html" target="_blank" class="map-title-sm">python学习重点知识谱图</a>
                       <div class="map-keyword">
                         <span><span class="fa fa-tags fa-fw"></span>关键词</span>
-                        <a href="#" class="keyword">后端</a>
-                        <a href="#" class="keyword">python</a>
-                        <a href="#" class="keyword">爬虫</a>
-                        <a href="#" class="keyword">数据分析</a>
+                        <a href="topic-page.html" class="keyword" target="_blank">后端</a>
+                        <a href="topic-page.html" class="keyword" target="_blank">python</a>
+                        <a href="topic-page.html" class="keyword" target="_blank">爬虫</a>
+                        <a href="topic-page.html" class="keyword" target="_blank">数据分析</a>
                         <span>...</span>
                       </div>
                       <div class="act-info">
@@ -400,19 +401,19 @@
                     <li class="box" id="hot-map-002">
                       <div class="user-info">
                         <div class="user-avatar">
-                          <a href="user.html"><img src="image/user-avatar3.jpg" alt="用户头像-sm" class="avatar-sm"></a>
-                          <a href="user.html" class="user-name">嘉顿饼干</a>
+                          <a href="personal-page.html" target="_blank"><img src="image/user-avatar3.jpg" alt="用户头像-sm" class="avatar-sm"></a>
+                          <a href="personal-page.html" class="user-name" target="_blank">嘉顿饼干</a>
                           <span> - </span>
                           <span class="user-act-time">2017.7.3 20:30:30</span>
                         </div>
                       </div>
-                      <a href="map-page.html" target="_blank" class="map-title-sm">前端知识谱图</a>
+                      <a href="user-mindmap.html" target="_blank" class="map-title-sm">前端知识谱图</a>
                       <div class="map-keyword">
                         <span><span class="fa fa-tags fa-fw"></span>关键词</span>
-                        <a href="#" class="keyword">前端</a>
-                        <a href="#" class="keyword">html</a>
-                        <a href="#" class="keyword">css</a>
-                        <a href="#" class="keyword">javascript</a>
+                        <a href="topic-page.html" class="keyword" target="_blank">前端</a>
+                        <a href="topic-page.html" class="keyword" target="_blank">html</a>
+                        <a href="topic-page.html" class="keyword" target="_blank">css</a>
+                        <a href="topic-page.html" class="keyword" target="_blank">javascript</a>
                         <span>...</span>
                       </div>
                       <div class="act-info">
@@ -431,35 +432,36 @@
                       </div>
                     </li>                    
                   </ul>
+                  <button class="btn btn-green load-more load-more-map">加载更多</button>
                 </div>
               </div>
             </div><!-- 中间主要内容栏end -->
 
             <!-- 右边推荐栏 -->
-            <div class="col-md-4" id="right-reco">
+            <div class="col-md-3" id="right-reco">
               <div class="box reco-xb">
                 <span>推荐关注</span>
                 <ul class="xb-list">
                   <li>
-                    <a href="personal-page.html" target="_blank"><img src="image/user-avatar2.jpg" alt="用户头像-sm" class="avatar-sm"></a>
+                    <a href="personal-page.html" target="_blank"><img src="image/user-avatar2.jpg" alt="用户头像-sm" class="avatar-ssm"></a>
                     <a class="follow-btn"><span class='fa fa-plus-circle'></span>关注</a>
                     <a href="personal-page.html" target="_blank" class="reco-user-name">奥利奥</a>
-                    <p>30k粉丝 · 535个赞</p>
+                    <p>30k粉丝</p>
                   </li>
                   <li>
-                    <a href="personal-page.html" target="_blank"><img src="image/user-avatar1.jpg" alt="用户头像-sm" class="avatar-sm"></a>
+                    <a href="personal-page.html" target="_blank"><img src="image/user-avatar1.jpg" alt="用户头像-sm" class="avatar-ssm"></a>
                     <a class="follow-btn"><span class='fa fa-plus-circle'></span>关注</a>
                     <a href="personal-page.html" target="_blank" class="reco-user-name">奥利奥</a>
-                    <p>30k粉丝 · 535个赞</p>
+                    <p>30k粉丝</p>
                   </li>
                   <li>
-                    <a href="personal-page.html" target="_blank"><img src="image/user-avatar2.jpg" alt="用户头像-sm" class="avatar-sm"></a>
+                    <a href="personal-page.html" target="_blank"><img src="image/user-avatar2.jpg" alt="用户头像-sm" class="avatar-ssm"></a>
                     <a class="follow-btn"><span class='fa fa-plus-circle'></span>关注</a>
                     <a href="personal-page.html" target="_blank" class="reco-user-name">奥利奥</a>
-                    <p>30k粉丝 · 535个赞</p>
+                    <p>30k粉丝</p>
                   </li>                                     
                 </ul>
-                <button class="btn btn-default more-recommend-writer" style="margin-left:108px;"><a href="intro-user-page.html" target="_blank" style="text-decoration:none;">更多推荐 ></a> </button> 
+                <button class="btn btn-default more-recommend-writer"><a href="intro-user-page.html" target="_blank" style="text-decoration:none;">更多推荐 ></a> </button> 
               </div>
               <div class="box page-footer">
                 Copyright © 2017, showledge.cn
@@ -480,7 +482,7 @@
             <h4 class="modal-title" id="exampleModalLabel">评论<span>(10)</span></h4>
           </div>
           <div class="modal-body">
-            <a href="user.html"><img src="image/user-avatar1.jpg" alt="用户头像-sm" class="avatar-sm"></a>
+            <a href="personal-page.html" target="_blank"><img src="image/user-avatar1.jpg" alt="用户头像-sm" class="avatar-sm"></a>
             <textarea name="comment-box" id="comment-box" class="form-control" rows="4"></textarea>
             <button class="btn btn-green comment-enter">评论</button>
           </div>
@@ -488,8 +490,8 @@
             <ul class="comment-list">
               <li id="comment-001">
                 <div class="user-info">
-                  <a href="user.html"><img src="image/user-avatar1.jpg" alt="用户头像-sm" class="avatar-ssm"></a>
-                  <a href="user.html" class="user-name">飞翔的便便</a>
+                  <a href="personal-page.html" target="_blank"><img src="image/user-avatar1.jpg" alt="用户头像-sm" class="avatar-ssm"></a>
+                  <a href="personal-page.html" class="user-name" target="_blank">飞翔的便便</a>
                   <span> - </span>
                   <span class="user-act-time">2017.7.3 20:30:30</span>
                 </div>
@@ -502,8 +504,8 @@
               </li>
               <li id="comment-002">
                 <div class="user-info">
-                  <a href="user.html"><img src="image/user-avatar2.jpg" alt="用户头像-sm" class="avatar-ssm"></a>
-                  <a href="user.html" class="user-name">飞翔的便便</a>
+                  <a href="personal-page.html" target="_blank"><img src="image/user-avatar2.jpg" alt="用户头像-sm" class="avatar-ssm"></a>
+                  <a href="personal-page.html" class="user-name" target="_blank">飞翔的便便</a>
                   <span> - </span>
                   <span class="user-act-time">2017.7.3 20:30:30</span>
                 </div>
@@ -516,8 +518,8 @@
               </li>
               <li id="comment-003">
                 <div class="user-info">
-                  <a href="user.html"><img src="image/user-avatar1.jpg" alt="用户头像-sm" class="avatar-ssm"></a>
-                  <a href="user.html" class="user-name">飞翔的便便</a>
+                  <a href="personal-page.html" target="_blank"><img src="image/user-avatar1.jpg" alt="用户头像-sm" class="avatar-ssm"></a>
+                  <a href="personal-page.html" class="user-name" target="_blank">飞翔的便便</a>
                   <span> - </span>
                   <span class="user-act-time">2017.7.3 20:30:30</span>
                 </div>
@@ -544,6 +546,8 @@
     <script src="js/reco-follow-btn-toggle.js"></script>
     <!-- counts-active.js -->
     <script src="js/counts-active.js"></script>
+    <!-- index.js -->
+    <script src="js/index.js"></script>
 
   </body>
 </html>
