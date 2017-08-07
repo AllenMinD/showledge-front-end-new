@@ -189,6 +189,7 @@
                       </div>
                     </li>
                   </ul>
+                  <button class="btn btn-green load-more load-more-act">加载更多</button> 
                 </div>
                 <div role="tabpanel" class="tab-pane" id="hot-note">
                   <ul>
@@ -259,6 +260,7 @@
                       </div>                                         
                     </li>
                   </ul>
+                  <button class="btn btn-green load-more load-more-note">加载更多</button> 
                 </div>
                 <div role="tabpanel" class="tab-pane" id="hot-map">
                   <ul>
@@ -329,6 +331,7 @@
                       </div>
                     </li>                    
                   </ul>
+                  <button class="btn btn-green load-more load-more-map">加载更多</button> 
                 </div>
               </div>
             </div><!-- 中间主要内容栏end -->
@@ -403,37 +406,6 @@
         </div>
       </div>
     </div>    
-    
-    <!-- 笔记选择窗口模态框 -->
-    <div class="modal fade" id="pick-note-modal" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">我的学习笔记</h4>
-          </div>
-          <div class="modal-body">
-            <ul>
-              <li id="pick-note-001">
-                <a href="note-page.html">我的python笔记</a>
-                <button class="btn btn-warning btn-info btn-sm pick-btn">选择</button>
-              </li>
-              <li id="pick-note-002">
-                <a href="note-page.html">我的java笔记</a>
-                <button class="btn btn-warning btn-info btn-sm pick-btn">选择</button>
-              </li>
-              <li id="pick-note-003">
-                <a href="note-page.html">我的java笔记</a>
-                <button class="btn btn-warning btn-info btn-sm pick-btn">选择</button>
-              </li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-green" data-dismiss="modal">选好了</button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->    
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.1.1.min.js"></script>
@@ -447,6 +419,8 @@
     <script src="js/reco-follow-btn-toggle.js"></script>
     <!-- counts-active.js -->
     <script src="js/counts-active.js"></script>
+    <!-- topic-page.js -->
+    <script src="js/topic-page.js"></script>
     
     <script>
       $(function () { $("[data-toggle='tooltip']").tooltip(); });

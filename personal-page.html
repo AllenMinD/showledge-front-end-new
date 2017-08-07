@@ -115,7 +115,7 @@
             <!-- 动态、笔记、地图、关注等 -->
             <div class="col-md-6 tab-content" style="padding-left:0;padding-right:0;">
               <div role="tabpanel" class="tab-pane active" id="study-act">
-                 <ul>
+                <ul>
                   <li class="box" id="my-act-001">
                     <div class="user-info">
                       <div class="user-avatar">
@@ -199,7 +199,8 @@
                       </div>                      
                     </div>
                   </li>
-                </ul>               
+                </ul>
+                <button class="btn btn-green load-more load-more-act">加载更多</button>               
               </div>
               <div role="tabpanel" class="tab-pane" id="study-note">
                 <ul>
@@ -270,6 +271,7 @@
                     </div>                                          
                   </li>
                 </ul>
+                <button class="btn btn-green load-more load-more-note">加载更多</button>
               </div>
               <div role="tabpanel" class="tab-pane" id="study-map">
                 <ul>
@@ -337,8 +339,10 @@
                           <span class="fa fa-bookmark"></span>
                           <span>665</span>
                         </div>                      
-                      </div>personal-page                 </li>                    
-                </ul>  
+                      </div>                 
+                    </li>                    
+                </ul>
+                <button class="btn btn-green load-more load-more-map">加载更多</button>  
               </div>
               <div role="tabpanel" class="tab-pane" id="study-idol">
                 <ul>
@@ -361,6 +365,7 @@
                     <a class="follow-btn not-follow">已关注</a>
                   </li>                  
                 </ul>
+                <button class="btn btn-green load-more load-more-idol">加载更多</button>
               </div>
               <div role="tabpanel" class="tab-pane" id="study-watcher">
                 <ul>
@@ -383,6 +388,7 @@
                     <a class="follow-btn"><span class='fa fa-plus-circle'></span>关注</a>
                   </li>                  
                 </ul>
+                <button class="btn btn-green load-more load-more-watcher">加载更多</button>
               </div>  
               <div role="tabpanel" class="tab-pane" id="collection">
                 <ul>
@@ -451,6 +457,7 @@
                     </div>                      
                   </li>                  
                 </ul>
+                <button class="btn btn-green load-more load-more-collection">加载更多</button>
               </div>                            
             </div>
 
@@ -564,17 +571,8 @@
     <script src="js/reco-follow-btn-toggle.js"></script>
     <!-- counts-active.js -->
     <script src="js/counts-active.js"></script>
-    <!-- 收藏按钮切换js -->
-    <script>
-      jQuery(document).ready(function($) {
-        $(".collection-btn").click(function(event) {
-          $(this).toggleClass("btn-danger");
-          if ($(this).attr("class") == "btn collection-btn btn-success btn-danger") 
-            $(this).text("取消收藏");   
-          else $(this).text("收藏");
-        });
-      });      
-    </script>
+    <!-- personal-page.html -->
+    <script src="js/personal-page.js"></script>
     
     <script>
       $(function () { $("[data-toggle='tooltip']").tooltip(); });

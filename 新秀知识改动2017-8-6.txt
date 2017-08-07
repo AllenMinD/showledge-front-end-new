@@ -9,8 +9,8 @@ edit-note-page.html
 
 每个页面
 	1. 可以点击的地方（链接）都要加上 （完成）
-	2. 每页的每一个col宽度问题（在宽屏上看会被拉长），特别是index-login.html的左按钮边栏 （完成了吧？）
-	3. 需要用到ajax的地方要加上ajax(index.html、index-login.html、personnal-page.html、intro-user-page.html、评论)
+	2. 每页的每一个col宽度问题（在宽屏上看会被拉长），特别是index-login.html的左按钮边栏 （完成？）
+	3. 需要用到ajax的地方要加上ajax(index.html、index-login.html、personnal-page.html、intro-user-page.html、评论) （基本完成，评论的Ajax没加）
 	
 	
 new-album-page.html
@@ -22,8 +22,8 @@ new-album-page.html
 edit-mindmap-page.html
 	1. 去掉这个页面
 	
-mindmap-page.html
-	1. 加上收藏按钮
+mindmap-page.html  (完成)
+	1. 加上收藏按钮  
 	2. 看看还有什么地方美化一下
 	
 	
@@ -144,4 +144,59 @@ mindmap-page.html
 	"likeNum": "737",
 	
 	"collectNum": "1002",
+}	
+
+==================================================================================================
+个人用户:
+	用户Id			userId
+	用户头像		userAvatar
+	用户名	 		userName
+	用户简介		userAbstract
+	关注状态		watch(0表示没关注，1表示有关注)
+	
+{
+	"userId": "001",
+	
+	"userAvatar": "http://img.souche.com/20161230/png/fd9f8aecab317e177655049a49b64d02.png",
+	
+	"userName": "杰瑞鼠吃cheese",
+	
+	"userAbstract": "我爱汤姆猫~",
+	
+	"watch": "1"
+	
+}	
+
+==================================================================================================
+推荐用户:
+个人用户:
+	用户Id			userId
+	用户头像		userAvatar
+	用户名	 		userName
+	赞数			likeNum
+	学习动态数		actNum
+	关注者数		watcherNum
+	最近笔记		latestNotes
+	
+{
+	"userId": "001",
+	
+	"userAvatar": "http://img.souche.com/20161230/png/fd9f8aecab317e177655049a49b64d02.png",
+	
+	"userName": "杰瑞鼠吃cheese",
+	
+	"userAbstract": "我爱汤姆猫~",
+	
+	"likeNum": "1234",
+	
+	"actNum": "513",
+	
+	"watcherNum": "166",
+	
+	"latestNotes": [
+		{"title": "拉格朗日浅谈", "link": "note-page.html"},
+		{"title": "回归函数探秘", "link": "note-page.html"},
+		{"title": "导数的用途", "link": "note-page.html"}
+	]
+	
 }	

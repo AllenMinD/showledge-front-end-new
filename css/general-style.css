@@ -711,12 +711,20 @@ a.user-dashboard-bg:active {
 
 .send-act-box .input-xxbj-form > label {
   font-size: 14px;
+  margin-right: 10px;
   font-weight: 100;
 }
 
 .send-act-box .input-xxbj-form > button {
   display: inline-block;
-  margin-left: 10px;
+}
+
+.picked-note {
+  display: inline-block;
+}
+
+.picked-note a {
+  color: #00cc66;
 }
 
 /*笔记选择窗口模态框  #pick-note-modal*/
