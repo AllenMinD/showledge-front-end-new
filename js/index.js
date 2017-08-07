@@ -247,4 +247,9 @@ $(document).ready(function() {
     countActiveBind()     
   });
 
+  /* ajax 加载中间栏 */
+  $("#category1").load("https://allenmind.github.io/showledge-front-end-new/topic-page.html");
+
+  $("#category3").load("https://allenmind.github.io/showledge-front-end-new/topic-page.html");
+
 });
