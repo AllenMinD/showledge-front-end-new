@@ -3,10 +3,16 @@
   padding: 0px;
 }
 
+.nav-pills > li {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  width: 194px;
+  width: 100%;
   color: #fff;
   background-color: #00cc66;
   font-size: 18px;
